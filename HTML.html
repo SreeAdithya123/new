@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday [Name]!</h1>
+        <p>May your special day be filled with joy and wonderful moments!</p>
+        <div id="qr-code"></div>
+        <p>Scan the QR code to view your birthday wishes!</p>
+    </div>
+
+    <div id="fireworks"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    
+    <script src="SCRIPT.js"></script>
+    <script>
+        const qr = new QRious({
+            element: document.getElementById('qr-code'),
+            value: '',
+            size: 200,
+        });
+    </script>
+    
+</body>
+</html>
